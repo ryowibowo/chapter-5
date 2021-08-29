@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="icon" href="./images/logo2.png">
+</head>
+
+<body>
+    <!--Top Navigation-->
+    <header>
+        <a href="./">
+            <div class="symbol">
+                &lt;
+            </div>
+        </a>
+        <div class="logo"></div>
+        <div class="heading">
+            ROCK PAPER SCISSORS
+        </div>
+    </header>
+
+    <section>
+        <div class="game-area">
+            <!--player-->
+            <div class="user-choice">
+                <h1 class="player-name">PLAYER 1</h1>
+                <div class="used">
+                    <button class="user-tool your-tool clear" id="playerBatu">
+                    <img class="tool" src="./images/batu.png" alt="batu">
+                </button>
+                    <button class="user-tool your-tool clear" id="playerKertas">
+                    <img class="tool" src="./images/kertas.png" alt="kertas">
+                </button>
+                    <button class="user-tool your-tool clear" id="playerGunting">
+                    <img class="tool" src="./images/gunting.png" alt="gunting">
+                </button>
+                </div>
+            </div>
+
+
+            <div class="Versus-Reset">
+                <div id="box">
+                    <h1 id="versus">VS</h1>
+                </div>
+                <div class="refresh">
+                    <img id="refresh" src="./images/refresh.png">
+                </div>
+            </div>
+
+            <div class="Com-Choice">
+                <h1 class="player-name">COM</h1>
+                <div class="used">
+                    <button class="user-tool clear" id="comBatu">
+                    <img src="./images/batu.png" alt="batu" >
+                </button>
+                    <button class="user-tool clear" id="comKertas">
+                    <img src="./images/kertas.png" alt="kertas" >
+                </button>
+                    <button class="user-tool clear" id="comGunting">
+                    <img src="./images/gunting.png" alt="gunting" >
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/game.js"></script>
+</body>
+
+</html>

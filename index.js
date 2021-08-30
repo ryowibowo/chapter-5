@@ -25,6 +25,11 @@ app.use(sessions({
 // cookie parser middleware
 app.use(cookieParser());
 
+app.use(function(req, res, next) {
+    res.locals.email = req.session.email;
+    next();
+});
+
 let auth = require('./db/auth.json');
 const port = 4000;
 
@@ -80,6 +85,11 @@ app.post('/login', (req, res) => {
         res.redirect("/login?success=true")
             // res.redirect(`/`);
     }
+})
+
+app.get('/logout', (req, res) => {
+    req.session.destroy();
+    res.redirect('/');
 })
 
 app.listen(port);
